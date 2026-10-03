@@ -29,6 +29,22 @@
           "target": 7
         }
       ]
+    },
+    {
+      "slug": "teste",
+      "name": "teste",
+      "instagram": "teste",
+      "passwordHash": "29551733538941ed9fdc3f8c71d0fabd:483698a845430d06c3db2da8d0c1e1cc7d610f598c8f93b51f41bf17aea7db58372ba3cd856785c71478ee42795b029926524b7bb8f8c6d11031d3f3b049dc61",
+      "editToken": "16c24e6e-36ee-48c3-8421-19fcdf449d72",
+      "items": [
+        {
+          "id": "76b9a40a-5b38-4a77-ab95-4d5a127b40da",
+          "label": "carinho",
+          "unit": "unidades",
+          "current": 47,
+          "target": 1100000
+        }
+      ]
     }
   ]
 }
