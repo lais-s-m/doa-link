@@ -24,7 +24,7 @@ export default async function EditarCausaPage({
 
   if (!unlocked) {
     return (
-      <div className="flex flex-1 flex-col items-center bg-zinc-50 px-6 py-20 dark:bg-black">
+      <div className="flex flex-1 flex-col items-center bg-zinc-50 px-4 py-14 sm:px-6 sm:py-20 dark:bg-black">
         <main className="flex w-full max-w-sm flex-col gap-6">
           <div className="flex flex-col gap-2 text-center">
             <h1 className="text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
@@ -44,14 +44,14 @@ export default async function EditarCausaPage({
   const lockCause = lockCauseAction.bind(null, slug);
 
   return (
-    <div className="flex flex-1 flex-col items-center bg-zinc-50 px-6 py-16 dark:bg-black">
+    <div className="flex flex-1 flex-col items-center bg-zinc-50 px-4 py-10 sm:px-6 sm:py-16 dark:bg-black">
       <main className="flex w-full max-w-lg flex-col gap-8">
         <div className="flex flex-col gap-2">
           <div className="flex items-start justify-between gap-4">
-            <h1 className="text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
+            <h1 className="min-w-0 wrap-break-word text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">
               {cause.name}
             </h1>
-            <form action={lockCause}>
+            <form action={lockCause} className="shrink-0">
               <button
                 type="submit"
                 className="cursor-pointer text-sm text-zinc-500 hover:underline dark:text-zinc-400"

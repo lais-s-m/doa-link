@@ -16,7 +16,7 @@ export default async function CausePage({
   }
 
   return (
-    <div className="flex flex-1 flex-col items-center bg-zinc-50 px-6 py-16 dark:bg-black">
+    <div className="flex flex-1 flex-col items-center bg-zinc-50 px-4 py-10 sm:px-6 sm:py-16 dark:bg-black">
       <main className="flex w-full max-w-lg flex-col gap-8">
         <div className="flex flex-col gap-2 text-center">
           <h1 className="text-2xl font-semibold tracking-tight text-black dark:text-zinc-50">

@@ -41,7 +41,7 @@ export function ItemRow({ slug, item }: { slug: string; item: Item }) {
 
   return (
     <li className="flex flex-col gap-3 rounded-xl border border-black/10 bg-white p-4 dark:border-white/10 dark:bg-zinc-950">
-      <div className="flex items-baseline justify-between">
+      <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
         <span className="font-medium text-black dark:text-zinc-50">
           {item.label}
         </span>
@@ -50,8 +50,11 @@ export function ItemRow({ slug, item }: { slug: string; item: Item }) {
         </span>
       </div>
 
-      <div className="flex items-center gap-2">
-        <form action={updateAction} className="flex flex-1 items-center gap-2">
+      <form
+        action={updateAction}
+        className="flex flex-col gap-2 sm:flex-row sm:items-center"
+      >
+        <div className="flex items-center gap-2">
           <input
             type="number"
             name="current"
@@ -64,15 +67,15 @@ export function ItemRow({ slug, item }: { slug: string; item: Item }) {
           <span className="text-sm text-zinc-500 dark:text-zinc-400">
             {item.unit} atuais
           </span>
-          <button
-            type="submit"
-            disabled={isUpdating}
-            className="ml-auto h-10 cursor-pointer rounded-lg bg-emerald-600 px-4 text-sm font-medium text-white hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-emerald-500 dark:text-black dark:hover:bg-emerald-400"
-          >
-            {isUpdating ? "Atualizando..." : justUpdated ? "Atualizado" : "Atualizar"}
-          </button>
-        </form>
-      </div>
+        </div>
+        <button
+          type="submit"
+          disabled={isUpdating}
+          className="h-10 w-full cursor-pointer rounded-lg bg-emerald-600 px-4 text-sm font-medium text-white hover:bg-emerald-700 disabled:cursor-not-allowed disabled:opacity-60 dark:bg-emerald-500 dark:text-black dark:hover:bg-emerald-400 sm:ml-auto sm:w-auto"
+        >
+          {isUpdating ? "Atualizando..." : justUpdated ? "Atualizado" : "Atualizar"}
+        </button>
+      </form>
 
       <form action={deleteAction}>
         <button
