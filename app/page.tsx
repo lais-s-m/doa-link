@@ -5,7 +5,7 @@ export default async function Home() {
   const causes = await getCauses();
 
   return (
-    <div className="flex flex-1 flex-col items-center bg-zinc-50 px-6 py-20 dark:bg-black">
+    <div className="flex flex-1 flex-col items-center bg-zinc-50 px-4 py-14 sm:px-6 sm:py-20 dark:bg-black">
       <main className="flex w-full max-w-lg flex-col gap-10">
         <div className="flex flex-col gap-3 text-center">
           <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-zinc-50">
@@ -34,12 +34,12 @@ export default async function Home() {
                 <li key={cause.slug}>
                   <Link
                     href={`/${cause.slug}`}
-                    className="flex items-center justify-between rounded-xl border border-black/10 bg-white px-4 py-3 transition-colors hover:border-black/20 dark:border-white/10 dark:bg-zinc-950 dark:hover:border-white/20"
+                    className="flex items-center justify-between gap-3 rounded-xl border border-black/10 bg-white px-4 py-3 transition-colors hover:border-black/20 dark:border-white/10 dark:bg-zinc-950 dark:hover:border-white/20"
                   >
-                    <span className="font-medium text-black dark:text-zinc-50">
+                    <span className="truncate font-medium text-black dark:text-zinc-50">
                       {cause.name}
                     </span>
-                    <span className="text-sm text-zinc-500 dark:text-zinc-400">
+                    <span className="shrink-0 text-sm text-zinc-500 dark:text-zinc-400">
                       /{cause.slug}
                     </span>
                   </Link>
