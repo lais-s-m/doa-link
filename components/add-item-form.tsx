@@ -35,7 +35,7 @@ export function AddItemForm({ slug }: { slug: string }) {
           type="text"
           name="label"
           required
-          placeholder="Ex: Ração"
+          placeholder="Ex: Arroz"
           className="h-11 rounded-lg border border-black/10 bg-white px-3 text-black outline-none focus:border-emerald-500 dark:border-white/10 dark:bg-zinc-950 dark:text-zinc-50 dark:focus:border-emerald-400"
         />
       </label>

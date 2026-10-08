@@ -1,15 +1,15 @@
 {
   "causes": [
     {
-      "slug": "patinhas-de-rua",
-      "name": "Patinhas de Rua",
-      "instagram": "patinhasderua",
+      "slug": "maos-solidarias",
+      "name": "Mãos Solidárias",
+      "instagram": "maossolidarias",
       "passwordHash": "1bf3203f01f2bd3f42e3d1cf83d676e2:2f43cf1627dccbec8eff97b7a42926b02f6d04f9e52a1d9764cede0957dc09cfbc8eb2dd0b591eea372f61cc4a28ca1f36b1d444eb76402e7a7e88e48e831e85",
       "editToken": "f8a169d0-dab8-4dee-967e-72283f324a20",
       "items": [
         {
-          "id": "racao",
-          "label": "Ração",
+          "id": "arroz",
+          "label": "Arroz",
           "unit": "kg",
           "current": 4,
           "target": 10
@@ -23,7 +23,7 @@
         },
         {
           "id": "89006590-21cd-4e39-b129-3b3f2fa7ba4f",
-          "label": "carinho",
+          "label": "Roupas de inverno",
           "unit": "unidades",
           "current": 0,
           "target": 7
