@@ -10,7 +10,7 @@ export default function CriarCausaPage() {
           </h1>
           <p className="text-zinc-600 dark:text-zinc-400">
             Depois de criar, você poderá adicionar os itens que a causa está
-            precisando (ração, cobertores, etc).
+            precisando (cestas básicas, roupas, cobertores, etc).
           </p>
         </div>
 

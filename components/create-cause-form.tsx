@@ -26,7 +26,7 @@ export function CreateCauseForm() {
           type="text"
           name="name"
           required
-          placeholder="Ex: Patinhas de Rua"
+          placeholder="Ex: Mãos Solidárias"
           className="h-11 rounded-lg border border-black/10 bg-white px-3 text-black outline-none focus:border-emerald-500 dark:border-white/10 dark:bg-zinc-950 dark:text-zinc-50 dark:focus:border-emerald-400"
         />
       </label>
@@ -38,7 +38,7 @@ export function CreateCauseForm() {
         <input
           type="text"
           name="instagram"
-          placeholder="@patinhasderua"
+          placeholder="@maossolidarias"
           className="h-11 rounded-lg border border-black/10 bg-white px-3 text-black outline-none focus:border-emerald-500 dark:border-white/10 dark:bg-zinc-950 dark:text-zinc-50 dark:focus:border-emerald-400"
         />
       </label>
